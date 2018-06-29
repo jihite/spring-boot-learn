@@ -37,7 +37,7 @@ public class MailServiceTest {
     public void testAttachMail() {
         String subject = "测试带附件邮件";
         String content = "请注意查收附件哦";
-        String filePath = "/Users/wzh94434/Del/testMail";
+        String filePath = "/Users/jihite/Del/testMail";
         mailService.sendAttachMail(to, subject, content, filePath);
     }
 
@@ -46,7 +46,7 @@ public class MailServiceTest {
         String subject = "带图片的邮件";
         String rscId = "neo006";
         String content="<html><body>这是有图片的邮件：<img src=\'cid:" + rscId + "\' ></body></html>";
-        String imgPath = "/Users/wzh94434/Downloads/abc.png";
+        String imgPath = "/Users/jihite/Downloads/abc.png";
         mailService.sendInlineResourceMail(to, subject, content, imgPath, rscId);
     }
 
